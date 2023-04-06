@@ -7,11 +7,12 @@ import { ActionEvent, ProductActionTypes } from 'src/app/state/product.state';
   styleUrls: ['./products-nav-bar.component.css']
 })
 export class ProductsNavBarComponent implements OnInit {
-  
+
   //1er solution
   // @Output() producteventEmitter : EventEmitter<any> = new EventEmitter();
   //ActionEvent correspond a la type de evenement et le payload  ->
   //payload pour faire passer un parametre
+  // <!-- decompostion  eventEmitter -->
   @Output() producteventEmitter : EventEmitter<ActionEvent> = new EventEmitter();
 
     constructor(){

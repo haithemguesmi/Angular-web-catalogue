@@ -1,5 +1,6 @@
 
 <!-- // productEventEmitter il va ecouter les evenements qui arrive depuis nav-bar -->
+<!-- decompostion  eventEmitter -->
 <app-products-nav-bar (producteventEmitter)="onActionEvent($event)"></app-products-nav-bar>
 <app-products-list [productsInput$]="products$" (productsEventEmitter)="onActionEvent($event)"></app-products-list>
 
